@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <title> QR-code </title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Outfit';
+    }
+    .container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: hsl(220, 15%, 55%);
+    }
+    .box{
+        width: 350px;
+        height: 530px;
+      
+        border-radius: 10px;
+        background-color: hsl(0, 0%, 100%);
+        position: relative;
+    }
+    .child{
+        position: absolute;
+        left: 24px;
+        top: 20px;
+    }
+    .child img{
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+    }
+    .Text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 30px;
+        text-align: center;    
+    }
+    .Text h2{
+        Font-size : 27px;
+        font-weight: 700;
+        line-height: 26px;
+    }
+    .Text p{ 
+        font-weight: 400;
+        font-size: 18px;
+        color: hsl(220, 15%, 55%);
+        width: 85%;
+        letter-spacing: 0.04px;
+        line-height: 18px;
+    }
+</style>
+<body>
+    <div class="container">
+          <div class="box">
+            <div class="child">
+                <img src="./images/Qrcode.png" alt="alt">
+                <div class="Text">
+                    <h2>Improve your front-end <br>skills by building projects</h2>
+                    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+                </div>
+            </div>
+          </div>
+    </div>
+</body>
+</html>
